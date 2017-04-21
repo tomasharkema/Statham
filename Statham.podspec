@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Alamofire+Promissum" do |ss|
     ss.ios.deployment_target = '9.0'
+    ss.watchos.deployment_target = '3.0'
     ss.source_files = [ "extensions/Alamofire+Statham.swift", "extensions/Alamofire+Promissum+Statham.swift" ]
     ss.dependency "Statham/Core"
     ss.dependency "Promissum/Alamofire", "~> 1.0"
